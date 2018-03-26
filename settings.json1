@@ -77,12 +77,9 @@
       "autoFix": true
     },
   ],
-  
+   "eslint.autoFixOnSave": true,// 保存时自动修复,格式化  和 editor formatonsave,略冲突
   // 12- prettier 配置 ----------------------------------------- 需要安装prettier  格式化
   "prettier.eslintIntegration": true, // prettier的eslint格式化从eslintrc.js中读取
-  // "prettier.semi": false,
-  "prettier.singleQuote": true,
-  "editor.renderIndentGuides": false, // js自动单引号
 }
 
   // 13 自动补全 suggest
