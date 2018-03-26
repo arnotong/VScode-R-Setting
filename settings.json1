@@ -85,7 +85,7 @@
   "prettier.singleQuote": true, // 单引号
   "editor.formatOnSave": true, // prettier用的是系统默认的保存格式化
 
-  // 13 自动补全 suggest
+  // 13- 自动补全 suggest -------------------------------------------------------
   "editor.quickSuggestionsDelay": 400, //设置的延迟稍微高一些,400ms 连续输入之后在出现// 默认30ms,一个字母就要出现一下,神烦
   "html.suggest.html5": false, // 鼠标悬停在html标签上会提示,这个是啥,怎么用等等. 干掉,也是神烦,我会不知道标签? 小看我,哼!
   "editor.snippetSuggestions": "none", // 我自己的自定义snippet就不显示了,很熟了对吧
@@ -93,3 +93,16 @@
   "editor.parameterHints": false, // 关闭代码 参数的悬浮提示
   "editor.wordBasedSuggestions": false, //单词提示 bye-bye
   }
+  // 14- 烦人的括号匹配matchBrackets ----------------------------------------------- 需要安装Subtle Match Brackets
+  "editor.matchBrackets": false, // 干掉原先的丑陋的恼人的匹配
+  "subtleBrackets.styles": {  // 换上我们漂亮的小金条
+    "global": {
+      "borderColor": "GoldenRod",
+      "borderWidth": "4px"
+    }
+  },
+  "editor.cursorWidth": 4, // 顺便光标美个容,破费!
+  
+  // 15- Selection 选择的烦恼 默认点选一个单词或者字母,都会全部匹配上,你说烦不烦啊,
+  "editor.selectionHighlight": false, // 歇歇不行么,强行切换到懒惰模式
+  
