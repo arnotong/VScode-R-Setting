@@ -10,7 +10,8 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:vue/recommended'
+    'plugin:vue/recommended',
+    'standard'
   ],
   // required to lint *.vue files
   plugins: [
