@@ -87,6 +87,6 @@
   "html.suggest.html5": false, // 鼠标悬停在html标签上会提示,这个是啥,怎么用等等. 干掉,也是神烦,我会不知道标签? 小看我,哼!
   "editor.snippetSuggestions": "none", // 我自己的自定义snippet就不显示了,很熟了对吧
   "editor.tabCompletion": true, // 虽然不显示自定义snippet了,但是按tab还得乖乖出来对吧
-  "editor.parameterHints": false, 
+  "editor.parameterHints": false, // 关闭代码 参数的悬浮提示
   "editor.wordBasedSuggestions": false, //单词提示 bye-bye
   
