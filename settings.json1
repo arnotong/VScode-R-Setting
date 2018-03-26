@@ -45,7 +45,6 @@
   
   // 6- Editor 代码辅助 ----------------------------------------
   "editor.tabCompletion": true, // snippet 扩展
-  "editor.formatOnSave": true, // 保存自动格式化
   "editor.formatOnPaste": true, // 编辑粘贴自动格式化
   "editor.wordWrap": "on", // 自动换行
   "files.exclude": { // 文件夹不显示 
