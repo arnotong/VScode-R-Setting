@@ -44,17 +44,12 @@
   "workbench.startupEditor": "none", // 起始页啥也不显示
   
   // 6- Editor 代码辅助 ----------------------------------------
-  "editor.tabCompletion": true, // snippet 扩展
+  "editor.tabSize": 2 // 这里主要迎合eslint的规范,毕竟有好多插件只认editor,不认eslintrc等配置文件 比如js-html-  stylus格式化插件等等
   "editor.formatOnPaste": true, // 编辑粘贴自动格式化
   "editor.wordWrap": "on", // 自动换行
   "files.exclude": { // 文件夹不显示 
     "**/node_modules": true
   },
-  // 自动补全 这么好的建议为啥不用呢,因为太多了,more is less----
-  "editor.quickSuggestions": false,
-  "editor.parameterHints": false,
-  "editor.wordBasedSuggestions": false,
-  "editor.snippetSuggestions": "none",
   
   // 7- stylus 设置--------------------------------------------- 需要安装 stylusSupremacy插件
   "stylusSupremacy.insertBraces": false,
@@ -71,28 +66,30 @@
   "namespaceResolver.showMessageOnStatusBar": true, //取消在页头提示
   
   // 10- vetur 配置 --------------------------------------------- 需要安装vetue 等
-  "vetur.format.defaultFormatter.html": "js-beautify-html", // html 格式化工具是js-beautify-html
-  "vetur.format.defaultFormatter.js": "vscode-typescript", // js的格式化工具
-  "javascript.validate.enable": false,
   "vetur.validation.template": false, // 取消Vetur默认使用 eslint-plugin-vue对template的检测
   
   // 11- eslint 配置--------------------------------------------- // 需要安装eslint,并npm i eslint // 自动修复简单错误// 和格式化 在缩进上有一些重合
-  "eslint.autoFixOnSave": true, //eslint自动修复
-  "eslint.validate": [
+  "eslint.validate": [ // 支持eslint的文件 奇怪的是这里设置的autoFix居然不起作用
     "javascript",
     "javascriptreact",
-    "html",
-    "vue"
+    {
+      "language": "vue",
+      "autoFix": true
+    },
   ],
-  "eslint.options": {
-    "plugins": [
-      "html"
-    ]
-  },
   
   // 12- prettier 配置 ----------------------------------------- 需要安装prettier  格式化
-  "prettier.eslintIntegration": true, // prettier eslint提示
+  "prettier.eslintIntegration": true, // prettier的eslint格式化从eslintrc.js中读取
   // "prettier.semi": false,
   "prettier.singleQuote": true,
   "editor.renderIndentGuides": false, // js自动单引号
 }
+
+  // 13 自动补全 suggest
+  "editor.quickSuggestionsDelay": 400, //设置的延迟稍微高一些,400ms 连续输入之后在出现// 默认30ms,一个字母就要出现一下,神烦
+  "html.suggest.html5": false, // 鼠标悬停在html标签上会提示,这个是啥,怎么用等等. 干掉,也是神烦,我会不知道标签? 小看我,哼!
+  "editor.snippetSuggestions": "none", // 我自己的自定义snippet就不显示了,很熟了对吧
+  "editor.tabCompletion": true, // 虽然不显示自定义snippet了,但是按tab还得乖乖出来对吧
+  "editor.parameterHints": false, 
+  "editor.wordBasedSuggestions": false, //单词提示 bye-bye
+  
