@@ -81,6 +81,9 @@
    
   // 12- prettier 配置 ----------------------------------------- 需要安装prettier  格式化
   "prettier.eslintIntegration": true, // prettier的eslint格式化从eslintrc.js中读取
+  "prettier.semi": false, // 不加分号
+  "prettier.singleQuote": true, // 单引号
+  "editor.formatOnSave": true, // prettier用的是系统默认的保存格式化
 
   // 13 自动补全 suggest
   "editor.quickSuggestionsDelay": 400, //设置的延迟稍微高一些,400ms 连续输入之后在出现// 默认30ms,一个字母就要出现一下,神烦
