@@ -44,7 +44,7 @@
   "workbench.startupEditor": "none", // 起始页啥也不显示
   
   // 6- Editor 代码辅助 ----------------------------------------
-  "editor.tabSize": 2 // 这里主要迎合eslint的规范,毕竟有好多插件只认editor,不认eslintrc等配置文件 比如js-html-  stylus格式化插件等等
+  "editor.tabSize": 2, // 这里主要迎合eslint的规范,毕竟有好多插件只认editor,不认eslintrc等配置文件 比如js-html-  stylus格式化插件等等
   "editor.formatOnPaste": true, // 编辑粘贴自动格式化
   "editor.wordWrap": "on", // 自动换行
   "files.exclude": { // 文件夹不显示 
@@ -78,9 +78,9 @@
     },
   ],
    "eslint.autoFixOnSave": true,// 保存时自动修复,格式化  和 editor formatonsave,略冲突
+   
   // 12- prettier 配置 ----------------------------------------- 需要安装prettier  格式化
   "prettier.eslintIntegration": true, // prettier的eslint格式化从eslintrc.js中读取
-}
 
   // 13 自动补全 suggest
   "editor.quickSuggestionsDelay": 400, //设置的延迟稍微高一些,400ms 连续输入之后在出现// 默认30ms,一个字母就要出现一下,神烦
@@ -89,4 +89,4 @@
   "editor.tabCompletion": true, // 虽然不显示自定义snippet了,但是按tab还得乖乖出来对吧
   "editor.parameterHints": false, // 关闭代码 参数的悬浮提示
   "editor.wordBasedSuggestions": false, //单词提示 bye-bye
-  
+  }
