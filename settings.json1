@@ -1,16 +1,22 @@
 {
-  "git.ignoreMissingGitWarning": true,
-  // 1-主题 Theme------------------------------------------
+  // 0-总原则:Less is More
+  // 0-插件配置原则:够用即可,不贪婪插件,绝对不装功能重复的,比如各种snippet,蛋疼
+  // 0-snippet配置原则:我一般很少用别人的snippet,一下太多了,掌握不了,更不利于熟练运用.用到什么就把snippet加到自己的snippet中
+  // 0-界面原则:能不显示的就不显示(比如minimap,)需要显示的底部状态栏,顶部文件栏(仅此而已),半显示的(explorer(alt+.),menu(alt)),全屏不是很喜欢,影响其他功能
+  
+  // 1-主题 Theme------------------------------------------ 需要安装atom one dark 和 material icon
   "workbench.colorTheme": "Atom One Dark", // atom 主题,字体配色好,比 Material配色舒服  sublime直接是 material
   "workbench.iconTheme": "material-icon-theme", // icon主题 material 
   "material-icon-theme.folders.theme": "specific", // spaecific风格
   "material-icon-theme.activeIconPack": "angular_ngrx", //主题样式
   "material-icon-theme.hidesExplorerArrows": true, //隐藏图标箭头
+
   // 2-字体 Font---------------------------------------------
   // 关于注释为什么是斜体,也是非常纠结啊,中文斜体不好看,英文斜体很漂亮,真是鱼与熊掌
   "editor.fontFamily": "Consolas,'Microsoft yahei", // 英文:consolas 中文:雅黑
   "editor.fontSize": 20, // 字号
   "editor.lineHeight": 40, // 行高
+  
   // 3. 显示 view-----------------------------------------------
   "window.zoomLevel": 0, //视窗缩放
   "editor.renderWhitespace": "all", // 显示空格,写代码嘛,显示空格舒服,区分tab和空格 ,''和 ' '
@@ -19,6 +25,7 @@
   "workbench.statusBar.visible": true, // 显示状态条
   "window.menuBarVisibility": "toggle", //隐藏菜单栏
   "explorer.openEditors.visible": 0, //最近打开的文件不显示
+  
   // 4. Emmet 配置----------------------------------------------
   "emmet.triggerExpansionOnTab": true, // tab扩展标签
   "emmet.includeLanguages": { // 在blade 和 vue 中使用emmet
@@ -29,8 +36,10 @@
     "vue-html": "html",
     "vue": "html"
   },
+  
   // 5. 起始页 startup -----------------------------------------
   "workbench.startupEditor": "none", // 起始页啥也不显示
+  
   // 6. Editor 代码辅助 ----------------------------------------
   "editor.tabCompletion": true, // snippet 扩展
   "editor.formatOnSave": true, // 保存自动格式化
@@ -44,23 +53,28 @@
   "editor.parameterHints": false,
   "editor.wordBasedSuggestions": false,
   "editor.snippetSuggestions": "none",
-  // 7. stylus 设置---------------------------------------------
+  
+  // 7. stylus 设置--------------------------------------------- 需要安装 stylusSupremacy插件
   "stylusSupremacy.insertBraces": false,
   "stylusSupremacy.insertColons": false,
   "stylusSupremacy.insertSemicolons": false,
-  // 8.php & laravel 设置--------------------------------------------------
+  
+  // 8.php & laravel 设置-------------------------------------------------- 需要安装php-cs-fixer插件,以及全局安装composer php-cs-fixer
   "php-cs-fixer.onsave": true,
   "php-cs-fixer.executablePath": "C:\\Users\\rockyx128\\AppData\\Roaming\\Composer\\vendor\\bin\\php-cs-fixer.bat",
   "php-cs-fixer.config": "C:\\Users\\rockyx128\\.vscode\\.php_cs",
   "blade.format.enable": true,
-  // 9 插件 Namespace Resolver-----------------------------------
+  
+  // 9 插件 Namespace Resolver----------------------------------- 需要安装NameSpace Resolver 这个不如sulime提示的好
   "namespaceResolver.showMessageOnStatusBar": true, //取消在页头提示
-  // 10 vetur 配置 ---------------------------------------------
+  
+  // 10 vetur 配置 --------------------------------------------- 需要安装vetue 等
   "vetur.format.defaultFormatter.html": "js-beautify-html", // html 格式化工具是js-beautify-html
   "vetur.format.defaultFormatter.js": "vscode-typescript", // js的格式化工具
   "javascript.validate.enable": false,
   "vetur.validation.template": false, // 取消Vetur默认使用 eslint-plugin-vue对template的检测
-  // 11.eslint 配置---------------------------------------------
+  
+  // 11.eslint 配置--------------------------------------------- // 需要安装eslint,并npm i eslint // 自动修复简单错误// 和格式化 在缩进上有一些重合
   "eslint.autoFixOnSave": true, //eslint自动修复
   "eslint.validate": [
     "javascript",
@@ -73,7 +87,8 @@
       "html"
     ]
   },
-  // 12. prettier 配置 -----------------------------------------
+  
+  // 12. prettier 配置 ----------------------------------------- 需要安装prettier  格式化
   "prettier.eslintIntegration": true, // prettier eslint提示
   // "prettier.semi": false,
   "prettier.singleQuote": true,
