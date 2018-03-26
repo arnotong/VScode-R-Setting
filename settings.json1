@@ -36,7 +36,8 @@
     "vue-html": "html",
     "vue": "html"
   },
-  
+  "emmet.showAbbreviationSuggestions": false, // 提示取消,但是还是有,不过好多了,         // 学习emmet 就设置true吧
+  "emmet.showExpandedAbbreviation": "never", // 不瞎逼提示了,如果是always 各种提示,神烦  // 学习emmet的话,那就打开"makeup"项
   // 5. 起始页 startup -----------------------------------------
   "workbench.startupEditor": "none", // 起始页啥也不显示
   
